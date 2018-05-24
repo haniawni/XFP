@@ -1,0 +1,10 @@
+{
+	"defaultenv": "prod",
+	
+	"prod": {
+    "driver": "pg",
+    "host": {"ENV": "DB_HOST"},
+    "user": {"ENV": "DB_USER"},
+    "password": {"ENV": "DB_PASS"}
+  }
+}
