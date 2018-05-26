@@ -1,3 +1,7 @@
+DROP FUNCTION public.create_task(character varying, integer, boolean, smallint);
+
+DROP VIEW public.mtl;
+
 CREATE OR REPLACE VIEW public.mtl AS
 WITH RECURSIVE subtasks AS (
   SELECT 
