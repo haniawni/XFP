@@ -1,0 +1,6 @@
+mixin tasktree(project_id)
+  include addTask
+  addTask(project_id)
+  include editableTask
+  for task in tasks
+    editableTask(task)

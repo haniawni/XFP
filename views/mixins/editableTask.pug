@@ -1,0 +1,8 @@
+mixin editableTask(task)
+  p #{task.subtask_ordinal}: 
+  if task.complete_date
+    strong.green
+    | X 
+  if task.discrete
+    | +!
+  #{task.name}

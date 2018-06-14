@@ -1,6 +1,6 @@
 CREATE TABLE public.projects
 (
-    id smallint NOT NULL,
+    id serial NOT NULL,
     name character varying(50) NOT NULL,
     PRIMARY KEY (id)
 )

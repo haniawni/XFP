@@ -1,4 +1,5 @@
 const promise = require('bluebird');
+require('dotenv').config()
 
 const initOptions = {
 	promiseLib: promise
@@ -7,9 +8,9 @@ const initOptions = {
 const config={
 	host: process.env.DB_HOST,
 	port: 5432,
-	database: 'public',
+	database: 'postgres',
 	user: process.env.DB_USER,
-	pass: process.env.DB_PASS
+	password: process.env.DB_PASS
 };
 
 const pgp = require('pg-promise')(initOptions);

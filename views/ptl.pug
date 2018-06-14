@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1 #{name} Task List:
+  include mixins/tasktree
+  +tasktree(project_id)

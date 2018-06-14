@@ -2,4 +2,16 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title}!
+
+  h2 Master Task List
+  a(href='/mtl') MTL Available Here
+
+
+  h2 Projects
+
+  ul
+  for proj in projects
+    li 
+      a(href='/ptl/' + proj.id) #{proj.name}
+

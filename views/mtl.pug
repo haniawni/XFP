@@ -1,6 +1,11 @@
 extends layout
 
 block content
-	ul
-		for task in tasks
-			li <b>+!<\b> #{task.name}: #{task.complete_date} (#{task.project_id}, #{task.id})
+  h1 Your Master Task List:
+  include mixins/tasktree
+  ul
+    for proj in projects
+      li
+        h2
+          #{proj.name}
+            +tasktree('#{proj.id}')

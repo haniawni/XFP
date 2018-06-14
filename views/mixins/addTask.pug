@@ -1,0 +1,9 @@
+mixin addTask(project_id,tasks)
+  form(action='/addTask', method='POST')
+    div.form_group
+      label(for='name') New Task:
+      input#name.form-control(type='text', name='name')
+    div.form_group
+      label(for='discrete') Discrete?
+      
+    

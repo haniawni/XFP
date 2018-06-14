@@ -1,6 +1,6 @@
 CREATE TABLE tasks
 (
-    id integer NOT NULL,
+    id serial NOT NULL,
     name character varying(200) NOT NULL,
     parent_id integer NULL,
     complete_date timestamp without time zone NULL,
